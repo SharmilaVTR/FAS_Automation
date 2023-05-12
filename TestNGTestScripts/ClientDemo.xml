@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="ZCLAC" parallel="false" preserve-order="true">
+		<parameter name="Environment" value="local" />
+	
+	  
+	
+	
+	<test name="FAS bulk date 3rd Jan">
+		<classes>
+            <class name='fasSikuli.sikuliTest.FASDEMO'>
+              <methods>
+                
+                
+                 <include name="FasIncomeTestcasess" />
+                  <include name="FASAddingAnAssetThroughToolbar" />
+                  
+    
+      </methods>
+		 </class>
+    </classes>	
+	</test>
+	
+	 
+</suite>
+
+
+

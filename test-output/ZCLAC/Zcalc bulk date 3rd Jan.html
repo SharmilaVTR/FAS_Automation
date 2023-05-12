@@ -1,0 +1,695 @@
+<html>
+<head>
+<title>TestNG:  Zcalc bulk date 3rd Jan</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Zcalc bulk date 3rd Jan</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>109/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Apr 05 14:11:40 GMT 2023</td>
+</tr>
+<tr><td>Total time:</td><td>9941 seconds (9941126 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.CheckForUpdatesfromMenuPrerequsiteApplicationtoregisters()'><b>CheckForUpdatesfromMenuPrerequsiteApplicationtoregisters</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Check For Updates from Menu -Pre-requsite: Application to register</td>
+<td><div><pre>java.lang.Exception: FindFailed: C:\Z-CALC\Apr 3rd,2023\zCalc_Automation\src\test\resources\Images\Commonimages\minimize.PNG: (35x24) in R[0,0 1366x768]@S(0)
+  Line 2222, in file Region.java
+
+	at zCalcSikuli.sikuliTest.Zclac.CheckForUpdatesfromMenuPrerequsiteApplicationtoregisters(Zclac.java:11958)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: FindFailed: C:\Z-CALC\Apr 3rd,2023\zCalc_Automation\src\test\resources\Images\Commonimages\minimize.PNG: (35x24) in R[0,0 1366x768]@S(0)
+  Line 2222, in file Region.java
+
+	at org.sikuli.script.Region.wait(Region.java:2222)
+	at org.sikuli.script.Region.wait(Region.java:2240)
+	at org.sikuli.script.Region.getLocationFromTarget(Region.java:3188)
+	at org.sikuli.script.Region.click(Region.java:3806)
+	at org.sikuli.script.Region.click(Region.java:3782)
+	at zCalcSikuli.sikuliTest.Zclac.CheckForUpdatesfromMenuPrerequsiteApplicationtoregisters(Zclac.java:11940)
+	... 28 more
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1224093895", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1224093895'><pre>java.lang.Exception: FindFailed: C:\Z-CALC\Apr 3rd,2023\zCalc_Automation\src\test\resources\Images\Commonimages\minimize.PNG: (35x24) in R[0,0 1366x768]@S(0)
+  Line 2222, in file Region.java
+
+	at zCalcSikuli.sikuliTest.Zclac.CheckForUpdatesfromMenuPrerequsiteApplicationtoregisters(Zclac.java:11958)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: FindFailed: C:\Z-CALC\Apr 3rd,2023\zCalc_Automation\src\test\resources\Images\Commonimages\minimize.PNG: (35x24) in R[0,0 1366x768]@S(0)
+  Line 2222, in file Region.java
+
+	at org.sikuli.script.Region.wait(Region.java:2222)
+	at org.sikuli.script.Region.wait(Region.java:2240)
+	at org.sikuli.script.Region.getLocationFromTarget(Region.java:3188)
+	at org.sikuli.script.Region.click(Region.java:3806)
+	at org.sikuli.script.Region.click(Region.java:3782)
+	at zCalcSikuli.sikuliTest.Zclac.CheckForUpdatesfromMenuPrerequsiteApplicationtoregisters(Zclac.java:11940)
+	... 28 more
+</pre></div></td>
+<td>17</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.VerifyingtheCustomizeMoveUptheselectedpagetoexportbasedonCategoryoptioninExportsettings()'><b>VerifyingtheCustomizeMoveUptheselectedpagetoexportbasedonCategoryoptioninExportsettings</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Verifying the Customize -Move Up the selected page to export, based on Category option in Export settings</td>
+<td></td>
+<td>56</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.VerifyingAlllistedPlannerslist()'><b>VerifyingAlllistedPlannerslist</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Verifying "All" listed Planners list</td>
+<td></td>
+<td>47</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.NewCaseFromTheToolBar()'><b>NewCaseFromTheToolBar</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: NewCaseFromTheToolBar</td>
+<td></td>
+<td>31</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.ValidateOpenCasefromtheToolbarbutton()'><b>ValidateOpenCasefromtheToolbarbutton</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Validate Open Case from the Toolbar button </td>
+<td></td>
+<td>45</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.VerifyingAllthelistedPlanners()'><b>VerifyingAllthelistedPlanners</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Verifying All the listed Planners</td>
+<td></td>
+<td>50</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.PrintfromtheToolBar()'><b>PrintfromtheToolBar</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Print from the ToolBar</td>
+<td></td>
+<td>66</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.VerifyingChartiablePlanningListedPlanners()'><b>VerifyingChartiablePlanningListedPlanners</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: VerifyingChartiablePlanningListedPlanners</td>
+<td></td>
+<td>38</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.NavigationtotheLastPlannerfromViewMenu()'><b>NavigationtotheLastPlannerfromViewMenu</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Navigation to the Last Planner from View Menu </td>
+<td></td>
+<td>49</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.NavigationtotheNextPageusingForwardbuttononToolbar()'><b>NavigationtotheNextPageusingForwardbuttononToolbar</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Navigation to the Next Page using Forward button on Toolbar </td>
+<td></td>
+<td>40</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.HelpFilelaunchfromMenu()'><b>HelpFilelaunchfromMenu</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Help File launch from Menu</td>
+<td></td>
+<td>26</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.VerifyingtheSaveworkbook()'><b>VerifyingtheSaveworkbook</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Verifying the Save work book</td>
+<td></td>
+<td>81</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.ZoomDialogOptionsverify()'><b>ZoomDialogOptionsverify</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: ZoomDialogOptionsverify </td>
+<td></td>
+<td>50</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.NavigationtothenextpagefromMenu()'><b>NavigationtothenextpagefromMenu</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Navigation to the next page from Menu </td>
+<td></td>
+<td>43</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.VerifyingEstatePlanningPresentationsLists()'><b>VerifyingEstatePlanningPresentationsLists</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Verifying Estate Planning Presentations Lists</td>
+<td></td>
+<td>49</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.VerifyingtheUnprotectSheet()'><b>VerifyingtheUnprotectSheet</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Verifying the Unprotect Sheet</td>
+<td></td>
+<td>55</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.SaveClientCaseFromTheMenu()'><b>SaveClientCaseFromTheMenu</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: SaveClientCaseFromTheMenu</td>
+<td></td>
+<td>76</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.VerifyingtheSyncRatewithDateoptioninCharitableLeadUnitTrustplanner()'><b>VerifyingtheSyncRatewithDateoptioninCharitableLeadUnitTrustplanner</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Verifying the "Sync Rate with Date" option in "Charitable Lead Unit Trust" planner</td>
+<td></td>
+<td>42</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.VerifyFileMenuItemsAfterAPlannerCalculatorIsOpen()'><b>VerifyFileMenuItemsAfterAPlannerCalculatorIsOpen</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: VerifyFileMenuItemsAfterAPlannerCalculatorisOpen</td>
+<td></td>
+<td>33</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.VerifyingTheCustomizeAddTheSelectedPageBasedOnCategoryOptionInExportSettings()'><b>VerifyingTheCustomizeAddTheSelectedPageBasedOnCategoryOptionInExportSettings</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Verifying the Customize -Add the selected page, based on Category option in Export settings</td>
+<td></td>
+<td>94</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.UpdatingthedefaultpathsinGeneraltabofUserSettingsdialog()'><b>UpdatingthedefaultpathsinGeneraltabofUserSettingsdialog</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Updating the default paths in "General" tab of User Settings dialog</td>
+<td></td>
+<td>39</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.VerifyingTheAvailableTabsInTheUserSettings()'><b>VerifyingTheAvailableTabsInTheUserSettings</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: VerifyingTheAvailableTabsInTheUserSettings</td>
+<td></td>
+<td>21</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.ValidateCaseListfromtheToolBar()'><b>ValidateCaseListfromtheToolBar</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: ValidateCaseListfromtheToolBar </td>
+<td></td>
+<td>37</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.NavigationtotheInputsfromMenu()'><b>NavigationtotheInputsfromMenu</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Navigation to the Inputs from Menu </td>
+<td></td>
+<td>36</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.VerifyingthedefaultExportsettings()'><b>VerifyingthedefaultExportsettings</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Verifying the default Export settings</td>
+<td></td>
+<td>27</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.VerifyingTheCustomizeDeleteTheExportSETInExportsettings()'><b>VerifyingTheCustomizeDeleteTheExportSETInExportsettings</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Verifying the Customize -Delete the Export SET in Export settings</td>
+<td></td>
+<td>120</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.ZoomDialogThroughToolBar()'><b>ZoomDialogThroughToolBar</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: ZoomDialogThroughToolBar </td>
+<td></td>
+<td>33</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.NavigationtotheLastPlannerfromToolBar()'><b>NavigationtotheLastPlannerfromToolBar</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Navigation to the Last Planner from ToolBar </td>
+<td></td>
+<td>46</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.VerifyingtheCustomizeoptioninExportsettings()'><b>VerifyingtheCustomizeoptioninExportsettings</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Verifying the Customize option in Export settings</td>
+<td></td>
+<td>42</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.ValidateOpentheexistingclientfromMenu()'><b>ValidateOpentheexistingclientfromMenu</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Validate Open the existing client from Menu </td>
+<td></td>
+<td>3</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.VerifyingthedefaultPresentationsvalueofUserSettingsdialog()'><b>VerifyingthedefaultPresentationsvalueofUserSettingsdialog</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Verifying the default Presentations values of User Settings dialog</td>
+<td></td>
+<td>18</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.UpdatingTheDefaultHeadersFootersValuesOfUserSettingsDialog()'><b>UpdatingTheDefaultHeadersFootersValuesOfUserSettingsDialog</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: UpdatingTheDefaultHeadersFootersValuesOfUserSettingsDialog</td>
+<td></td>
+<td>27</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.HelpApplicationNotes()'><b>HelpApplicationNotes</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: HelpApplicationNotes</td>
+<td></td>
+<td>24</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.ToolBar1HomePagenaviation()'><b>ToolBar1HomePagenaviation</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: ToolBar1 >> Home Page naviation </td>
+<td></td>
+<td>22</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.VerifyViewMenuItemsAfterClientOpen()'><b>VerifyViewMenuItemsAfterClientOpen</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: VerifyViewMenuItemsAfterClientOpen</td>
+<td></td>
+<td>15</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.ValidateOpentheexistingclientfromToolBar()'><b>ValidateOpentheexistingclientfromToolBar</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Validate Open the existing client from ToolBar </td>
+<td></td>
+<td>15</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.AboutzCalcToolBox()'><b>AboutzCalcToolBox</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: AboutzCalcToolBox</td>
+<td></td>
+<td>8</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.VerifyToolsmenuitemafteraplannercalculatorisopen()'><b>VerifyToolsmenuitemafteraplannercalculatorisopen</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Verify Tools menu items after a planner/calculator is open</td>
+<td></td>
+<td>34</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.VerifyingThe7520RatesDailog()'><b>VerifyingThe7520RatesDailog</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Verifying the 7520 Rates dailog</td>
+<td></td>
+<td>31</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.ValidateNewCaseFromTheMenuVerifyAvailability()'><b>ValidateNewCaseFromTheMenuVerifyAvailability</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: ValidateNewCaseFromTheMenuVerifyAvailability</td>
+<td></td>
+<td>7</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.SaveClientCaseFromTheToolBar()'><b>SaveClientCaseFromTheToolBar</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: SaveClientCaseFromTheToolBar</td>
+<td></td>
+<td>78</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.ValidateSaveclientAsfromthemenu()'><b>ValidateSaveclientAsfromthemenu</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Validate Save client As from the menu </td>
+<td></td>
+<td>59</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.PrintPreviewFromTheToolbar()'><b>PrintPreviewFromTheToolbar</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: PrintPreviewFromTheToolbar</td>
+<td></td>
+<td>44</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.ValidateViewMenuHomePageNavigation()'><b>ValidateViewMenuHomePageNavigation</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: ValidateViewMenuHomePageNavigation</td>
+<td></td>
+<td>22</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.VerifyingTheCustomizeMoveDownTheSelectedPageToExportBasedOnCategoryOptionInExportSettings()'><b>VerifyingTheCustomizeMoveDownTheSelectedPageToExportBasedOnCategoryOptionInExportSettings</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Verifying the Customize -Move Down the selected page to export, based on Category option in Export settings</td>
+<td></td>
+<td>104</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.VerifyingtheSaveworkbookCancelchanges()'><b>VerifyingtheSaveworkbookCancelchanges</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Verifying the Save work book - Cancel changes</td>
+<td></td>
+<td>71</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.VerifyingTheApplicableExclusionAmountToUseInEstatePlanScenarioForCurrentYear2023AndAllStates()'><b>VerifyingTheApplicableExclusionAmountToUseInEstatePlanScenarioForCurrentYear2023AndAllStates</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Verifying the Applicable Exclusion Amount to Use in Estate Plan Scenario for Current Year(2023) and All States</td>
+<td></td>
+<td>414</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.VerifyingtheSyncRatewithDateoptioninQualifiedPersonalResidenceTrustplanner()'><b>VerifyingtheSyncRatewithDateoptioninQualifiedPersonalResidenceTrustplanner</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Verifying the "Sync Rate with Date" option in "Qualified Personal Residence Trust" planner</td>
+<td></td>
+<td>42</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.NewCaseFromTheMenu()'><b>NewCaseFromTheMenu</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: NewCaseFromTheMenu</td>
+<td></td>
+<td>42</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.ValidateNewCaseFromTheToolBarVerifyAvailability()'><b>ValidateNewCaseFromTheToolBarVerifyAvailability</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: ValidateNewCaseFromTheToolBarVerifyAvailability</td>
+<td></td>
+<td>4</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.VerifyingtheApplicableExclusionAmountinInterRelatedCharitableDeductionCalculatorforLastYearandallSitus()'><b>VerifyingtheApplicableExclusionAmountinInterRelatedCharitableDeductionCalculatorforLastYearandallSitus</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Verifying the Applicable Exclusion Amount in Inter Related Charitable Deduction Calculator for Last Year and all Situs</td>
+<td></td>
+<td>428</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.VerifyingTheApplicableExclusionAmountInCreditShelterCalculatorForTheCurrentYear2023AndAllSitus()'><b>VerifyingTheApplicableExclusionAmountInCreditShelterCalculatorForTheCurrentYear2023AndAllSitus</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Verifying the Applicable Exclusion Amount in Credit Shelter Calculator for the Current Year(2023) and All Situs</td>
+<td></td>
+<td>422</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.NavigationToTheNextPagefromMenu()'><b>NavigationToTheNextPagefromMenu</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: NavigationToTheNextPagefromMenu </td>
+<td></td>
+<td>31</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.UnRegisterPreRequisiteApplicationunRegister()'><b>UnRegisterPreRequisiteApplicationunRegister</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: UnRegister (Pre-Requisite: Application un-Register)</td>
+<td></td>
+<td>10</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.VerifyingTheCustomizeOpenTheExportSETInExportSettings()'><b>VerifyingTheCustomizeOpenTheExportSETInExportSettings</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Verifying the Customize -Open the Export SET in Export settings</td>
+<td></td>
+<td>129</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.VerifyingtheSyncRatewithDateoptioninPrivateAnnuityplanner()'><b>VerifyingtheSyncRatewithDateoptioninPrivateAnnuityplanner</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Verifying the Sync Rate with Date option in Private Annuity planner</td>
+<td></td>
+<td>42</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.NavigationtotheNextPageusingBackwardbuttononToolbar()'><b>NavigationtotheNextPageusingBackwardbuttononToolbar</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Navigation to the Next Page using Backward button on Toolbar</td>
+<td></td>
+<td>36</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.VerifyingTheHeadersFootersValuesOfUserSettingsDialog()'><b>VerifyingTheHeadersFootersValuesOfUserSettingsDialog</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: VerifyingTheHeadersFootersValuesOfUserSettingsDialog</td>
+<td></td>
+<td>67</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.ValidateOpenCasefromtheMenu()'><b>ValidateOpenCasefromtheMenu</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Validate Open Case from the Menu </td>
+<td></td>
+<td>49</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.VerifyHelpmenuitemsafterclientopenandApplicationUnRegistered()'><b>VerifyHelpmenuitemsafterclientopenandApplicationUnRegistered</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Verify Help menu items after client open and Application Un-Registered</td>
+<td></td>
+<td>10</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.VerifyingTheCustomizeSaveTheExportSETInExportsettings()'><b>VerifyingTheCustomizeSaveTheExportSETInExportsettings</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Verifying the Customize -Save the Export SET in Export settings</td>
+<td></td>
+<td>130</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.NavigationtotheInputsfromToolBar()'><b>NavigationtotheInputsfromToolBar</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Navigation to the Inputs from ToolBar </td>
+<td></td>
+<td>39</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.RunThePresentaions()'><b>RunThePresentaions</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: RunThePresentaions</td>
+<td></td>
+<td>48</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.VerifyingQualifiedPlansAndIRAsListedPresentationsLists()'><b>VerifyingQualifiedPlansAndIRAsListedPresentationsLists</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: VerifyingQualifiedPlansAndIRAsListedPresentationsLists</td>
+<td></td>
+<td>26</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.VerifyingTheCustomizeCategoryOptionInExportSettings()'><b>VerifyingTheCustomizeCategoryOptionInExportSettings</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: VerifyingTheCustomizeCategoryOptionInExportSettings</td>
+<td></td>
+<td>80</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.VerifyingTheCustomizeEDITExportSETInExportsettings()'><b>VerifyingTheCustomizeEDITExportSETInExportsettings</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Verifying the Customize -EDIT Export SET in Export settings</td>
+<td></td>
+<td>138</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.VerifyViewMenuItemsAfterAPlannerCalculatorIsOpen()'><b>VerifyViewMenuItemsAfterAPlannerCalculatorIsOpen</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: VerifyViewMenuItemsAfterAPlannerCalculatorIsOpen</td>
+<td></td>
+<td>27</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.VerifyingTheApplicableExclusionAmountInInterMaritalDeductionCalculatorForCurrentYear2023AndAllSitus()'><b>VerifyingTheApplicableExclusionAmountInInterMaritalDeductionCalculatorForCurrentYear2023AndAllSitus</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Verifying the Applicable Exclusion Amount in Inter marital Deduction Calculator for Current Year(2023) and All Situs</td>
+<td></td>
+<td>425</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.VerifyInputsItemsAfterClientOpen()'><b>VerifyInputsItemsAfterClientOpen</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Verify Inputs items after client open</td>
+<td></td>
+<td>15</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.VerifytoolBaritemsafterclientopen()'><b>VerifytoolBaritemsafterclientopen</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Verify toolBar items after client open</td>
+<td></td>
+<td>10</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.ValidateNewClientCreationfromMenus()'><b>ValidateNewClientCreationfromMenus</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Validate New Client Creation from Menu </td>
+<td></td>
+<td>67</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.VerifyingAllTheListedPlanners()'><b>VerifyingAllTheListedPlanners</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: VerifyingAllTheListedPlanners</td>
+<td></td>
+<td>56</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.VerifyFileMenuItemsAfterClientOpen()'><b>VerifyFileMenuItemsAfterClientOpen</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: VerifyFileMenuItemsAfterClientOpen</td>
+<td></td>
+<td>15</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.HelpFilelaunchfromToolBar1Button()'><b>HelpFilelaunchfromToolBar1Button</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Help File launch from ToolBar1 Button</td>
+<td></td>
+<td>26</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.VerifyingAllTheListedPresentationsLists()'><b>VerifyingAllTheListedPresentationsLists</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: VerifyingAllTheListedPresentationsLists</td>
+<td></td>
+<td>50</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.ZoomDialogUsingMenuOption()'><b>ZoomDialogUsingMenuOption</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: ZoomDialogUsingMenuOption </td>
+<td></td>
+<td>45</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.VerifyingTheCustomizeAddAllPagesBasedOnCategoryOptionInExportSettings()'><b>VerifyingTheCustomizeAddAllPagesBasedOnCategoryOptionInExportSettings</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Verifying the Customize -Add All pages, based on Category option in Export settings</td>
+<td></td>
+<td>103</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.ValidateSaveCaseAsfromthemenus()'><b>ValidateSaveCaseAsfromthemenus</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Validate Save Case As from the menu </td>
+<td></td>
+<td>47</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.VerifyingtheSyncRatewithDateoptioninCharitableRemainderAnnityTrustplanner()'><b>VerifyingtheSyncRatewithDateoptioninCharitableRemainderAnnityTrustplanner</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Verifying the "Sync Rate with Date" option in "Charitable Remainder Annity Trust" planner</td>
+<td></td>
+<td>42</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.VerifyToolsMenuItemsAfterClientOpen()'><b>VerifyToolsMenuItemsAfterClientOpen</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Verify Tools menu items after client open</td>
+<td></td>
+<td>18</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.CaseListfromthemenu()'><b>CaseListfromthemenu</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Case List from the menu</td>
+<td></td>
+<td>128</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.ModifyingasProtectingthesheetafterupdatingthelabels()'><b>ModifyingasProtectingthesheetafterupdatingthelabels</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Modifying as Protecting the sheet after updating the labels</td>
+<td></td>
+<td>62</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.VerifyingtheSyncRatewithDateoptioninCharitableLeadAnnuityTrustplanner()'><b>VerifyingtheSyncRatewithDateoptioninCharitableLeadAnnuityTrustplanner</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Verifying the "Sync Rate with Date" option in "Charitable Lead Annuity Trust" planner</td>
+<td></td>
+<td>42</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.ValidateSaveCaseAsfromthemenu()'><b>ValidateSaveCaseAsfromthemenu</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Validate Save Case As from the menu </td>
+<td></td>
+<td>149</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.VerifyingtheCustomizeRemoveAllpagebasedonCategoryoptioninExportsettings()'><b>VerifyingtheCustomizeRemoveAllpagebasedonCategoryoptioninExportsettings</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Verifying the Customize -Remove All page, based on Category option in Export settings</td>
+<td></td>
+<td>47</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.VerifyingTheSyncRateWithDateOptionInCharitableGiftAnnuityTrustPlanner()'><b>VerifyingTheSyncRateWithDateOptionInCharitableGiftAnnuityTrustPlanner</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Verifying the Sync Rate with Date option in Charitable Gift Annuity Trust planner</td>
+<td></td>
+<td>42</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.VerifyingtheApplicableExclusionAmountinIntermaritalDeductionCalculatorforLastYearandAllSitus()'><b>VerifyingtheApplicableExclusionAmountinIntermaritalDeductionCalculatorforLastYearandAllSitus</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Verifying the "Applicable Exclusion Amount" in Inter marital Deduction Calculator for Last Year and All Situs</td>
+<td></td>
+<td>425</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.VerifyingthedefaultpathsinGeneraltabofUserSettingsdialog()'><b>VerifyingthedefaultpathsinGeneraltabofUserSettingsdialog</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Verifying the default paths in "General" tab of User Settings dialog</td>
+<td></td>
+<td>16</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.VerifyingTheCustomizeCreateNEWExportSETInExportSettings()'><b>VerifyingTheCustomizeCreateNEWExportSETInExportSettings</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Verifying the Customize -Create NEW Export SET in Export settings</td>
+<td></td>
+<td>129</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.VerifyingtheExportallpagessettings()'><b>VerifyingtheExportallpagessettings</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Verifying the Export all pages settings</td>
+<td></td>
+<td>36</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.VerifyingTheCustomizeAvailablePagesBasedOnCatergoryOptionInExportSettings()'><b>VerifyingTheCustomizeAvailablePagesBasedOnCatergoryOptionInExportSettings</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: VerifyingTheCustomizeAvailablePagesBasedOnCatergoryOptionInExportSettings</td>
+<td></td>
+<td>91</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.PrintfromtheMenu()'><b>PrintfromtheMenu</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Print from the Menu</td>
+<td></td>
+<td>68</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.VerifyingtheApplicableExclusionAmountinEstateTaxCalculatorForLastYearandAllsitus()'><b>VerifyingtheApplicableExclusionAmountinEstateTaxCalculatorForLastYearandAllsitus</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Verifying the Applicable Exclusion Amount in Inter Related Charitable Deduction Calculator</td>
+<td></td>
+<td>424</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.VerifyingCharitablePlanningthelistedPresentationsLists()'><b>VerifyingCharitablePlanningthelistedPresentationsLists</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Verifying Charitable Planning the listed Presentations Lists</td>
+<td></td>
+<td>53</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.VerifyingtheAppendtoExistingFileinExportsettings()'><b>VerifyingtheAppendtoExistingFileinExportsettings</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Verifying the"Append to Existing File" in Export settings</td>
+<td></td>
+<td>75</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.VerifyingtheCustomizeRemoveselectedpagebasedonCategoryoptioninExportsettings()'><b>VerifyingtheCustomizeRemoveselectedpagebasedonCategoryoptioninExportsettings</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Verifying the Customize -Remove selected page, based on Category option in Export settings</td>
+<td></td>
+<td>57</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.VerifyingtheApplicableExclusionAmountinIntermaritalDeductionCalculatorS()'><b>VerifyingtheApplicableExclusionAmountinIntermaritalDeductionCalculatorS</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Verifying the Applicable Exclusion Amount in Inter marital Deduction Calculator</td>
+<td></td>
+<td>429</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.VerifyingtheSyncRatewithDateoptioninCharitableRemainderUnitrustplanner()'><b>VerifyingtheSyncRatewithDateoptioninCharitableRemainderUnitrustplanner</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Verifying the "Sync Rate with Date" option in "Charitable Remainder Unitrust" planner</td>
+<td></td>
+<td>47</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.VerifyingTheApplicableExclusionAmountInEstateTaxCalculatorForCurrentYear2023AndAllSitus()'><b>VerifyingTheApplicableExclusionAmountInEstateTaxCalculatorForCurrentYear2023AndAllSitus</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Verifying the Applicable Exclusion Amount in Estate Tax Calculator For Current Year(2023) and All situs</td>
+<td></td>
+<td>423</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.NavigationtothenextpagefromMenuLinkedPresentation()'><b>NavigationtothenextpagefromMenuLinkedPresentation</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Navigation to the next page from Menu LinkedPresentation</td>
+<td></td>
+<td>43</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.UpdatingthedefaultPresentationsvaluesofUserSettingsdialog()'><b>UpdatingthedefaultPresentationsvaluesofUserSettingsdialog</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Updating the default Presentations values of User Settings dialog</td>
+<td></td>
+<td>62</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.ExportingtheUpdatedsheetafterUnprotecting()'><b>ExportingtheUpdatedsheetafterUnprotecting</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Exporting the Updated sheet after Unprotecting</td>
+<td></td>
+<td>105</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.VerifyingTheDefaultHeadersFootersValuuesOfUserSettingsDialog()'><b>VerifyingTheDefaultHeadersFootersValuuesOfUserSettingsDialog</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: VerifyingTheDefaultHeadersFootersValuuesOfUserSettingsDialog</td>
+<td></td>
+<td>16</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.VerifyingTheDefaultValuesInGiftTaxPlanner()'><b>VerifyingTheDefaultValuesInGiftTaxPlanner</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Verifying the default values in Gift Tax Planner</td>
+<td></td>
+<td>24</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.VerifyingTheApplicableExclusionAmountToUseInEstatePlanScenarioBasedOnSitusAndYears()'><b>VerifyingTheApplicableExclusionAmountToUseInEstatePlanScenarioBasedOnSitusAndYears</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Verifying the Applicable Exclusion Amount to Use in Estate Plan Scenario based on Situs and Year</td>
+<td></td>
+<td>416</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.ZcalcExit()'><b>ZcalcExit</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Zcalc Exit</td>
+<td></td>
+<td>29</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.ValidateNewClientCreationfromToolBar()'><b>ValidateNewClientCreationfromToolBar</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Validate New Client Creation from Tool Bar </td>
+<td></td>
+<td>77</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.VerifyingTheSyncRateWithDateOptionInSelfCancellingInstallmentNotePlanner()'><b>VerifyingTheSyncRateWithDateOptionInSelfCancellingInstallmentNotePlanner</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Verifying the Sync Rate with Date option in Self Cancelling Installment Note planner</td>
+<td></td>
+<td>42</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.VerifyingTheApplicableExclusionAmountInInterRelatedCharitableDeductionCalculatorForCurrentYear2023AndAllSitus()'><b>VerifyingTheApplicableExclusionAmountInInterRelatedCharitableDeductionCalculatorForCurrentYear2023AndAllSitus</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: Verifying the Applicable Exclusion Amount in Inter Related Charitable Deduction Calculator for Current Year(2023) and all Situs</td>
+<td></td>
+<td>426</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+<tr>
+<td title='zCalcSikuli.sikuliTest.Zclac.VerifyToolBarItemsAfterAPlannerCalculatorIsOpen()'><b>VerifyToolBarItemsAfterAPlannerCalculatorIsOpen</b><br>Test class: zCalcSikuli.sikuliTest.Zclac<br>Test method: VerifyToolBarItemsAfterAPlannerCalculatorisOpen</td>
+<td></td>
+<td>30</td>
+<td>zCalcSikuli.sikuliTest.Zclac@7b36aa0c</td></tr>
+</table><p>
+</body>
+</html>

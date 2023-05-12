@@ -1,0 +1,22 @@
+{
+
+
+
+"Fas_demo_20":
+[
+{
+
+"LiabilityName" : "Liabilityone",
+"Liability1" : "Liability1",
+"GroupHeader" : "1",
+"LiabilityID" : "L123456789",
+"ReceivedDate" : "04/15/2023",
+"InterestRate" : "55",
+"RedemptionDate" :"04/16/2023",
+"InventoryValue" : "123",
+"AccruedAmount": "30",
+
+"narrative":"Hello Text"
+}
+]
+}

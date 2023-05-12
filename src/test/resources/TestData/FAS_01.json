@@ -1,0 +1,25 @@
+{
+
+
+
+"FAS_01":
+[
+{
+
+"Name" : "Assettwo",
+"SortName" : "Asset2",
+"AssetType" : "Stock, Common",
+"AssetID" : "S123456789",
+"CUSIP" : "Z123456789",
+"GroupHeader" : "2",
+"EIN" : "234561234",
+"RedDate" : "04/13/2023",
+"PriorDate" : "04/13/2023"
+
+
+
+					
+
+}
+]
+}

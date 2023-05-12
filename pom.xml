@@ -1,0 +1,202 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+ 
+
+  <groupId>cnbSikuli</groupId>
+  <artifactId>sikuliTest</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+   
+
+  <name>sikuliTest</name>
+  <url>http://maven.apache.org</url>
+
+ 
+
+   <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+<repositories>
+		<repository>
+			<id>atlassian-public</id>
+			<url>https://m2proxy.atlassian.com/repository/public</url>
+			<snapshots>
+				<enabled>true</enabled>
+				<updatePolicy>daily</updatePolicy>
+				<checksumPolicy>warn</checksumPolicy>
+			</snapshots>
+			<releases>
+				<enabled>true</enabled>
+				<checksumPolicy>warn</checksumPolicy>
+			</releases>
+		</repository>
+
+		<repository>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+			<id>central</id>
+			<name>Central Repository</name>
+			<url>https://repo.maven.apache.org/maven2</url>
+		</repository>
+	</repositories>
+
+	<pluginRepositories>
+		<pluginRepository>
+			<id>atlassian-public</id>
+			<url>https://m2proxy.atlassian.com/repository/public</url>
+			<releases>
+				<enabled>true</enabled>
+				<checksumPolicy>warn</checksumPolicy>
+			</releases>
+			<snapshots>
+				<checksumPolicy>warn</checksumPolicy>
+			</snapshots>
+		</pluginRepository>
+
+		<pluginRepository>
+			<releases>
+				<updatePolicy>never</updatePolicy>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+			<id>central</id>
+			<name>Central Repository</name>
+			<url>https://repo.maven.apache.org/maven2</url>
+		</pluginRepository>
+	</pluginRepositories>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      </dependency>
+      <dependency>
+      <groupId>org.testng</groupId>
+      <artifactId>testng</artifactId>
+      <version>7.1.0</version>
+      </dependency>
+       <dependency>
+        <groupId>com.github.2gis.winium</groupId>
+        <artifactId>winium-webdriver</artifactId>
+        <version>0.1.0-1</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>3.141.59</version>
+</dependency>
+
+ 	<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.6</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.thoughtworks.selenium/com.springsource.com.thoughtworks.selenium -->
+		<!-- <dependency> <groupId>com.thoughtworks.selenium</groupId> <artifactId>com.springsource.com.thoughtworks.selenium</artifactId> 
+			<version>1.0.1</version> </dependency> -->
+		<dependency>
+			<groupId>com.atlassian.jira</groupId>
+			<artifactId>jira-rest-java-client-core</artifactId>
+			<version>3.0.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>commons-configuration</groupId>
+			<artifactId>commons-configuration</artifactId>
+			<version>1.10</version>
+		</dependency>
+
+<!-- https://mvnrepository.com/artifact/com.sikulix/sikulixapi -->
+<!-- <dependency>
+    <groupId>com.sikulix</groupId>
+    <artifactId>sikulixapi</artifactId>
+    <version>1.1.0</version>
+</dependency> -->
+<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+<dependency>
+    <groupId>commons-io</groupId>
+    <artifactId>commons-io</artifactId>
+    <version>2.6</version>
+</dependency>
+
+ 
+
+
+    <!-- https://mvnrepository.com/artifact/com.relevantcodes/extentreports -->
+    <dependency>
+        <groupId>com.relevantcodes</groupId>
+        <artifactId>extentreports</artifactId>
+        <version>2.41.2</version>
+    </dependency>
+        <dependency>
+            <groupId>com.googlecode.json-simple</groupId>
+            <artifactId>json-simple</artifactId>
+            <version>1.1.1</version>
+        </dependency>
+    <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20140107</version>
+        </dependency>
+  </dependencies>
+  <build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>3.3</version>
+					<configuration>
+						<source>1.8</source>
+						<target>1.8</target>
+					</configuration>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-surefire-plugin</artifactId>
+					<version>2.21.0</version>
+					<configuration>
+						<suiteXmlFiles>
+							<suiteXmlFile>${project.basedir}/${RegressionPath}</suiteXmlFile>
+						</suiteXmlFiles>
+						<testErrorIgnore>true</testErrorIgnore>
+						<testFailureIgnore>true</testFailureIgnore>
+					</configuration>
+				</plugin>
+				
+				<plugin>
+					<artifactId>maven-clean-plugin</artifactId>
+					<version>2.5</version>
+					<executions>
+						<execution>
+							<id>default-clean</id>
+							<phase>clean</phase>
+							<goals>
+								<goal>clean</goal>
+							</goals>
+						</execution>
+					</executions>
+					<configuration>
+						<excludeDefaultDirectories>true</excludeDefaultDirectories>
+						<filesets>
+							<fileset>
+								<directory>target/</directory>
+								<followSymlinks>false</followSymlinks>
+								<includes>
+									<include>**/*</include>
+								</includes>
+							</fileset>
+						</filesets>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+</project>
