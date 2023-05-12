@@ -109,7 +109,6 @@ public class BaseTest  {
 			System.out.println(driver);
 			Thread.sleep(10000);
 			 driver.findElement(By.name("Run as Demo")).click();
- 			
              Thread.sleep(2000);
 
  			 BasePage.SendKeysById("txtPassword", "Satya@1234");
@@ -139,7 +138,7 @@ public class BaseTest  {
             Screen screen = new Screen();
             DesktopOptions option=new DesktopOptions();
 
-            option.setApplicationPath("C:\\Program Files\\Microsoft Office\\root\\Office16\\EXCEL.EXE");
+            option.setApplicationPath("C:\\FPS\\FAS706\\FAS\\FAS.exe");
            
 
             driver=new WiniumDriver(new URL("http://localhost:9999"), option);

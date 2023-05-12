@@ -14,12 +14,8 @@ public class Locators  extends BaseTest {
 	
 	public static String  btnYes="btnYes";
 	
-	
 	public static String  DetailAdd_Name="btnDetailAdd";
 	public static String  AI_Name="A/I";
-	
-	
-
 	
 	public static String  ABrowser_Name="A";
 	public static String  txtAssetName_ID="txtAssetName";
@@ -31,7 +27,6 @@ public class Locators  extends BaseTest {
 	
 	public static String  Login="Login";
 
-	
 	public static String  AssetID_Id="Asset ID Row 1";
 	
 	public static String  btnMasterDelete="btnMasterDelete";

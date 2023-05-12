@@ -1,0 +1,25 @@
+{
+
+
+
+"FAS_85":
+[
+{
+
+"Name" : "Cashtwo",
+"SortName" : "Cash2",
+"SortName1" : "Cash3",
+"AssetID" : "D123456789A2",
+"CUSIP" : "C12345678",
+"GroupHeader" : "2",
+"State" : "NY",
+"EIN" : "234561234",
+"InterestRate" : 500.10
+
+
+
+					
+
+}
+]
+}
