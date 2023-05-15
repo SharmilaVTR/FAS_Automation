@@ -31,7 +31,7 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
-	<classpathentry kind="lib" path="C:/Users/X023606/OneDrive - Thomson Reuters Incorporated/Desktop/Shortcuts/sikulixapi-2.0.4.jar"/>
-	<classpathentry kind="lib" path="C:/Users/X023606/OneDrive - Thomson Reuters Incorporated/Desktop/Shortcuts/sikulixide-2.0.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/X023548/OneDrive - Thomson Reuters Incorporated/Documents/backup_cnb/CNB Files/CNB Files/CNBFiles/files/sikulixapi-2.0.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/X023548/OneDrive - Thomson Reuters Incorporated/Documents/backup_cnb/CNB Files/CNB Files/CNBFiles/files/sikulixide-2.0.4.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

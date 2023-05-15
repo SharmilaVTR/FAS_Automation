@@ -263,7 +263,7 @@ public class FASDEMO extends BaseTest {
         			 BasePage.ClickTabButton();
         			        			
            			 BasePage.sendChar(Accrued); 
-           			test.log(LogStatus.PASS, "In the Income Grid>> Income transaction is appeared with Amount = 2000.00 and Accrued Portion = 1000.00");
+           			//test.log(LogStatus.PASS, "In the Income Grid>> Income transaction is appeared with Amount = 2000.00 and Accrued Portion = 1000.00");
            			//Ok_Name
            			 
            			BasePage.ClickWithUISPYAutomationName(Locators.Ok_Name);
@@ -271,6 +271,20 @@ public class FASDEMO extends BaseTest {
            			
            			
            			BasePage.ClickWithUISPYAutomationName(Locators.AcctDate_Name);
+
+                     Boolean validation =BasePage.isElementPresentusingName(Locators.AcctDate_Name);
+           			
+        			if(validation==true) {
+        				test.log(LogStatus.PASS, "In the Income Grid>> Income transaction is appeared with Amount = 2000.00 and Accrued Portion = 1000.00");
+        		
+        			}
+        			else {
+        				test.log(LogStatus.FAIL, "In the Income Grid>> Income transaction is appeared with Amount = 2000.00 and Accrued Portion = 1000.00");
+        				BasePage.TakeScreenshorForFailure(testCaseID1, test);
+        			
+        			}
+
+           			
 
            			BasePage.ClickWithUISPYAutomationID(Locators.btnDetailDelete_Name);
            			BasePage.ClickWithUISPYAutomationID(Locators.btnYes);
