@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [ZCLAC]" guice-stage="DEVELOPMENT">
-  <parameter name="Environment" value="local"/>
-  <test thread-count="5" name="FAS bulk date 3rd Jan(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="fasSikuli.sikuliTest.FASDEMO">
+      <class name="fasSikuli.sikuliTest.FAS">
         <methods>
-          <include name="FASAddingAnAssetThroughToolbar"/>
-          <include name="FasIncomeTestcasess"/>
           <include name="setUp"/>
+          <include name="extentSetUp"/>
           <include name="setup"/>
           <include name="DelOldReport"/>
-          <include name="extentSetUp"/>
+          <include name="FASAddingaIncurredLiabilitythroughtoolbar"/>
         </methods>
-      </class> <!-- fasSikuli.sikuliTest.FASDEMO -->
+      </class> <!-- fasSikuli.sikuliTest.FAS -->
     </classes>
-  </test> <!-- FAS bulk date 3rd Jan(failed) -->
-</suite> <!-- Failed suite [ZCLAC] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

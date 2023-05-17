@@ -32,7 +32,77 @@ public class Locators  extends BaseTest {
 	public static String  btnMasterDelete="btnMasterDelete";
 
 	
+	
+	
 
+	public static String  AssertID_Name="Asset ID Row 0";
+	public static String  SaleRedeemCollect="Sale/Redeem/Collect";
+	
+	public static String  btnOK_Id="btnOK";
+	
+	public static String  cmbAssetName="cmbAssetName";
+
+	public static String  Assertone="Assertone";
+	
+	public static String  cmbDepositTo="cmbDepositTo";
+	
+	public static String  dtpSettlementDate="dtpSettlementDate";
+	public static String  chkOverrideInventoryValue="chkOverrideInventoryValue";
+	
+	public static String  dtpTaxDate="dtpTaxDate";
+	
+	public static String  txtNarrative="txtNarrative";
+
+	public static String  SaveContinue="Save & Continue";
+	
+	
+	
+public static String  BD_Name="B/D";
+	
+	public static String  btnMasterAdd="btnMasterAdd";
+	public static String  txtFirstName="txtFirstName";
+	
+	public static String  txtLastName="txtLastName";
+	
+	public static String  txtSortName="txtSortName";
+
+	public static String  txtAddress1="txtAddress1";
+	
+
+	public static String  txtCity="txtCity";
+	public static String  cmbStates="cmbStates";
+	
+	public static String  NY="NY";
+	
+	public static String  cmbRelations="cmbRelations";
+
+	public static String  chkInterestedParty="chkInterestedParty";
+	
+	
+	public static String  txtNatureOfInterest="txtNatureOfInterest";
+	
+	
+	public static String  WBrowser="W";
+	
+	public static String  Narrative="txtNarrative";
+	
+	public static String  AIBrowser="AI";
+	
+	public static String  CEBrowser="C/E";
+	
+	public static String  cmbExpenseDebtType="cmbExpenseDebtType";
+
+	public static String  AttorneyFees="Attorney Fees";
+	
+	public static String  txtDate="txtDate";
+	
+	public static String  txtCheck="txtCheck";
+	
+	public static String  radTaxable="radTaxable";
+	
+	public static String  IL_Browser="IL";
+	
+	public static String  LT_Browser="L/T";
 }
 
 

@@ -9,7 +9,7 @@
           <include name="extentSetUp"/>
           <include name="setup"/>
           <include name="DelOldReport"/>
-          <include name="FasIncomeTestcases"/>
+          <include name="FASAddingaIncurredLiabilitythroughtoolbar"/>
         </methods>
       </class> <!-- fasSikuli.sikuliTest.FAS -->
     </classes>

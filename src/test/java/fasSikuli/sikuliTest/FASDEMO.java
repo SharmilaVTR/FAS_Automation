@@ -235,7 +235,10 @@ public class FASDEMO extends BaseTest {
 				String sectionKey2 = "Accrued";
 				String Accrued = jsonReader.readKeyValueFromJsonObject(jsonObjectChild, sectionKey2);
 				
-                  
+				test.log(LogStatus.PASS, "FAS Login Screen will be displayed.");
+				
+				test.log(LogStatus.PASS, "FAS must get logged in and 'Open a Client' dialog must be displayed.");
+
         			  
         			  test.log(LogStatus.PASS, "Client should get opened");       			  
         			  BasePage.ClickWithUISPYAutomationName(Locators.AI_Name);
