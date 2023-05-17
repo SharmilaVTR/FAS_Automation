@@ -214,6 +214,7 @@ public static void clickonEnterKey() throws AWTException {
 	 Robot robo = new Robot();
       
 	 robo.keyPress(KeyEvent.VK_ENTER);
+	 robo.keyRelease(KeyEvent.VK_ENTER);
        
 }
 
@@ -325,7 +326,7 @@ public static void sendChar(String value) throws InterruptedException
   //element.clear();
 //	 WebElement ss =driver.findElement(By.id(id)); 
 //	 ss.click();
-	 Thread.sleep(3000);
+	 Thread.sleep(2000);
 	 //Thread.sleep(4000);
   for (int i = 0; i < value.length(); i++){
 	  Actions action = new Actions(driver);
@@ -430,6 +431,15 @@ public static void ClickOnOverRideValueATBrowser(String value) throws AWTExcepti
 		 
       
 }	
+
+
+public static void clickonDownArrow() throws AWTException, InterruptedException {
+	 Robot robo = new Robot();
+     
+	 robo.keyPress(KeyEvent.VK_DOWN);
+	 robo.keyRelease(KeyEvent.VK_DOWN);
+    Thread.sleep(1000);  
+}
 
 	
 

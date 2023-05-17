@@ -1305,6 +1305,493 @@ public class FAS extends BaseTest {
 	}
 	
 
+
+	
+	@Test(description = "FAS-Adding a 'Return of Principal' through toolbar.")
+
+	public void FASAddingAReturnOfPrincipalThroughToolbar() throws Exception {
+		
+		try {
+			Screen screen = new Screen();
+			String testCaseID1 = "FAS_03";
+			
+			testResult = Reporter.getCurrentTestResult();
+			String jiraNumber = testResult.getMethod().getDescription();
+			test = extentReports.startTest(jiraNumber);
+			
+			JSONArray listOfSearchData = jsonReader.readJSONDataFromFile(testCaseID1);
+
+			for (Object searchString : listOfSearchData) {
+
+				JSONObject jsonObjectChild = (JSONObject) searchString;
+				
+				String sectionKey = "Name";
+				String Name = jsonReader.readKeyValueFromJsonObject(jsonObjectChild, sectionKey);
+				
+				String sectionKey1 = "DepositTo";
+				String DepositTo = jsonReader.readKeyValueFromJsonObject(jsonObjectChild, sectionKey1);
+				
+				String sectionKey5 = "AccountingDate";
+				String AccountingDate = jsonReader.readKeyValueFromJsonObject(jsonObjectChild, sectionKey5);
+				
+				String sectionKey6 = "Proceeds";
+				String Proceeds = jsonReader.readKeyValueFromJsonObject(jsonObjectChild, sectionKey6);
+				
+				String sectionKey7 = "Narrative";
+				String Narrative = jsonReader.readKeyValueFromJsonObject(jsonObjectChild, sectionKey7);
+				
+				
+				test.log(LogStatus.PASS, "FAS Login Screen is displayed.");
+				
+				test.log(LogStatus.PASS, "FAS must get logged in and 'Open a Client' dialog must be displayed.");
+				  
+        			  test.log(LogStatus.PASS, "Client account is opened.");
+        			  BasePage.ClickWithUISPYAutomationName(Locators.RBrowser_Name);
+        			  
+        			  BasePage.sendChar(Name);
+ 
+        			 test.log(LogStatus.PASS, "'Return of Principal' window must be displayed.");
+        			 
+        			 BasePage.ClickTabButton();
+        	
+        			 BasePage.sendChar(DepositTo);
+        			 
+        			 BasePage.ClickTabButton();
+        			 
+        			 BasePage.ClickTabButton();
+        			 
+        			 BasePage.sendChar(AccountingDate);
+        			 
+        			 BasePage.ClickTabButton();
+        			 BasePage.sendChar(Proceeds);
+        			 
+        			 BasePage.ClickTabButton();
+        			 
+        			 BasePage.ClickTabButton();
+        			
+        			 BasePage.ClickTabButton();
+        			 
+        			 BasePage.sendChar(Narrative);
+        			
+        			 BasePage.ClickTabButton();
+        			 
+        			 BasePage.ClickWithUISPYAutomationName(Locators.Ok_Name);
+        			 
+        			 BasePage.ClickWithUISPYAutomationName(Locators.ATBrowser_Name);	
+       			
+       			 Thread.sleep(2000);
+       			 
+
+       			BasePage.ClickWithUISPYAutomationName(Locators.EntryRow0_Name);
+
+       			BasePage.ClickWithUISPYAutomationID(Locators.btnDetailDelete_Name);
+       			BasePage.ClickWithUISPYAutomationID(Locators.btnYes);
+       			test.log(LogStatus.PASS, "The added 'Return of Principal' must be appeared in the A/T browser>> Transaction grid.");
+       		 BasePage.ClickWithUISPYAutomationID(Locators.btnDetailClose_Id);	 
+       			// driver.findElement(By.id("btnDetailClose")).click();
+        			  
+			}
+                     
+                }
+                catch (Exception e) {
+
+                               String screenShotName = new SimpleDateFormat("yyyyMMddhhmmss'.txt'").format(new Date());
+                               String screenShotPath = capture(screenShotName, "FAS");
+                               test.log(LogStatus.FAIL, "Please find Snapshot below: " + test.addScreenCapture(screenShotPath));
+                               test.log(LogStatus.FAIL, "FAS" + e.getMessage());
+                               throw new Exception(e);
+                           }
+
+                       }
+	
+
+	
+	@Test(description = "FAS-Adding a 'Capital Gain Distribution' through toolbar.")
+
+	public void FASAddingACapitalGainDistributionThroughToolbar() throws Exception {
+		
+		try {
+			Screen screen = new Screen();
+			String testCaseID1 = "FAS_04";
+			
+			testResult = Reporter.getCurrentTestResult();
+			String jiraNumber = testResult.getMethod().getDescription();
+			test = extentReports.startTest(jiraNumber);
+			
+			JSONArray listOfSearchData = jsonReader.readJSONDataFromFile(testCaseID1);
+
+			for (Object searchString : listOfSearchData) {
+
+				JSONObject jsonObjectChild = (JSONObject) searchString;
+				
+				String sectionKey = "Name";
+				String Name = jsonReader.readKeyValueFromJsonObject(jsonObjectChild, sectionKey);
+				
+				String sectionKey1 = "DepositTo";
+				String DepositTo = jsonReader.readKeyValueFromJsonObject(jsonObjectChild, sectionKey1);
+				
+				String sectionKey5 = "AccountingDate";
+				String AccountingDate = jsonReader.readKeyValueFromJsonObject(jsonObjectChild, sectionKey5);
+				
+				String sectionKey6 = "Proceeds";
+				String Proceeds = jsonReader.readKeyValueFromJsonObject(jsonObjectChild, sectionKey6);
+				
+				String sectionKey7 = "Narrative";
+				String Narrative = jsonReader.readKeyValueFromJsonObject(jsonObjectChild, sectionKey7);
+				
+				
+				test.log(LogStatus.PASS, "FAS Login Screen is displayed.");
+				
+				test.log(LogStatus.PASS, "FAS must get logged in and 'Open a Client' dialog must be displayed.");
+				  
+        			  test.log(LogStatus.PASS, "Client account is opened.");
+        			  BasePage.ClickWithUISPYAutomationName(Locators.CBrowser_Name);
+        			  
+        			  BasePage.sendChar(Name);
+ 
+        			 test.log(LogStatus.PASS, "'Capital gain Distribution' window must be displayed.");
+        			 
+        			 BasePage.ClickTabButton();
+        	
+        			 BasePage.sendChar(DepositTo);
+        			 
+        			 BasePage.ClickTabButton();
+        			 
+        			 BasePage.ClickTabButton();
+        			 
+        			 BasePage.sendChar(AccountingDate);
+        			 
+        			 BasePage.ClickTabButton();
+        			 BasePage.sendChar(Proceeds);
+        			 
+        			 BasePage.ClickTabButton();
+        			 
+        			 BasePage.ClickTabButton();
+        			
+        			 BasePage.ClickTabButton();
+        			 
+        			 BasePage.sendChar(Narrative);
+        			
+        			 BasePage.ClickTabButton();
+        			 
+        			 BasePage.ClickWithUISPYAutomationID(Locators.LongTerm_ID);
+        			 
+        			
+        			 BasePage.ClickWithUISPYAutomationName(Locators.Ok_Name);
+        			 
+        			 BasePage.ClickWithUISPYAutomationName(Locators.ATBrowser_Name);	
+       			
+       			 Thread.sleep(2000);
+       			 
+
+       			BasePage.ClickWithUISPYAutomationName(Locators.EntryRow0_Name);
+
+       			BasePage.ClickWithUISPYAutomationID(Locators.btnDetailDelete_Name);
+       			BasePage.ClickWithUISPYAutomationID(Locators.btnYes);
+       			test.log(LogStatus.PASS, "The added 'Capital gain Distribution' must be appeared in the A/T browser>> Transaction grid");
+       		 BasePage.ClickWithUISPYAutomationID(Locators.btnDetailClose_Id);	 
+       			// driver.findElement(By.id("btnDetailClose")).click();
+        			  
+			}
+                     
+                }
+                catch (Exception e) {
+
+                               String screenShotName = new SimpleDateFormat("yyyyMMddhhmmss'.txt'").format(new Date());
+                               String screenShotPath = capture(screenShotName, "FAS");
+                               test.log(LogStatus.FAIL, "Please find Snapshot below: " + test.addScreenCapture(screenShotPath));
+                               test.log(LogStatus.FAIL, "FAS" + e.getMessage());
+                               throw new Exception(e);
+                           }
+
+                       }
+	
+
+	@Test(description = "FAS-Adding an Asset/Purchase through toolbar.")
+
+	public void FASAddingAnAssetPurchaseThroughToolbar() throws Exception {
+		
+		try {
+			Screen screen = new Screen();
+			String testCaseID1 = "FAS_05";
+			
+			testResult = Reporter.getCurrentTestResult();
+			String jiraNumber = testResult.getMethod().getDescription();
+			test = extentReports.startTest(jiraNumber);
+			
+			JSONArray listOfSearchData = jsonReader.readJSONDataFromFile(testCaseID1);
+
+			for (Object searchString : listOfSearchData) {
+
+				JSONObject jsonObjectChild = (JSONObject) searchString;
+				
+				String sectionKey1 = "AccruedPaid";
+				String AccruedPaid = jsonReader.readKeyValueFromJsonObject(jsonObjectChild, sectionKey1);
+				
+				String sectionKey5 = "SettlementDate";
+				String SettlementDate = jsonReader.readKeyValueFromJsonObject(jsonObjectChild, sectionKey5);
+				
+				String sectionKey6 = "Units";
+				String Units = jsonReader.readKeyValueFromJsonObject(jsonObjectChild, sectionKey6);
+				
+				String sectionKey7 = "PurchasePrice";
+				String PurchasePrice = jsonReader.readKeyValueFromJsonObject(jsonObjectChild, sectionKey7);
+				
+				
+				test.log(LogStatus.PASS, "FAS Login Screen is displayed.");
+				
+				test.log(LogStatus.PASS, "FAS must get logged in and 'Open a Client' dialog must be displayed.");
+				  
+        			  test.log(LogStatus.PASS, "Client account is opened.");
+        			  BasePage.ClickWithUISPYAutomationName(Locators.PBrowser_Name);
+        			  
+        			  test.log(LogStatus.PASS, "'Add Asset/Purchase' window must be displayed.");
+        			  
+        			  BasePage.ClickWithUISPYAutomationID(Locators.AddAssetDropdown_ID);
+        			  
+        			  BasePage.clickonDownArrow();
+        			  
+        			  BasePage.clickonEnterKey();
+        			  
+        			  BasePage.ClickWithUISPYAutomationID(Locators.PrincipalRadioButton_ID);
+        			  
+        			  BasePage.ClickTabButton();
+        			 
+        			  BasePage.sendChar(SettlementDate);
+ 
+        			 BasePage.ClickTabButton();
+        	
+        			 BasePage.sendChar(Units);
+        			 
+        			 BasePage.ClickTabButton();
+        			 
+        			 BasePage.sendChar(PurchasePrice);
+        			 
+        			 BasePage.ClickTabButton();
+        			
+        			 BasePage.sendChar(AccruedPaid);
+        			
+        			 BasePage.ClickWithUISPYAutomationName(Locators.Ok_Name);
+        			 
+        			 BasePage.ClickWithUISPYAutomationName(Locators.Ok_Name);
+        			 
+        			 BasePage.ClickWithUISPYAutomationName(Locators.ATBrowser_Name);	
+       			
+       			 Thread.sleep(2000);
+       			 
+       			BasePage.ClickWithUISPYAutomationID(Locators.btnDetailDelete_Name);
+       			BasePage.ClickWithUISPYAutomationID(Locators.btnYes);
+       			test.log(LogStatus.PASS, "The newly added Purchase record should be appeared in the  A/T browser>> Transaction grid.");
+       		 BasePage.ClickWithUISPYAutomationID(Locators.btnDetailClose_Id);	 
+       			// driver.findElement(By.id("btnDetailClose")).click();
+        			  
+			}
+                     
+                }
+                catch (Exception e) {
+
+                               String screenShotName = new SimpleDateFormat("yyyyMMddhhmmss'.txt'").format(new Date());
+                               String screenShotPath = capture(screenShotName, "FAS");
+                               test.log(LogStatus.FAIL, "Please find Snapshot below: " + test.addScreenCapture(screenShotPath));
+                               test.log(LogStatus.FAIL, "FAS" + e.getMessage());
+                               throw new Exception(e);
+                           }
+
+                       }
+	
+
+	@Test(description = "FAS-Adding a Stock Split through toolbar.")
+
+	public void FASAddingAStockSplitThroughToolbar() throws Exception {
+		
+		try {
+			Screen screen = new Screen();
+			String testCaseID1 = "FAS_06";
+			
+			testResult = Reporter.getCurrentTestResult();
+			String jiraNumber = testResult.getMethod().getDescription();
+			test = extentReports.startTest(jiraNumber);
+			
+			JSONArray listOfSearchData = jsonReader.readJSONDataFromFile(testCaseID1);
+
+			for (Object searchString : listOfSearchData) {
+
+				JSONObject jsonObjectChild = (JSONObject) searchString;
+				
+				String sectionKey1 = "Name";
+				String Name = jsonReader.readKeyValueFromJsonObject(jsonObjectChild, sectionKey1);
+				
+				String sectionKey5 = "SettlementDate";
+				String SettlementDate = jsonReader.readKeyValueFromJsonObject(jsonObjectChild, sectionKey5);
+				
+				String sectionKey6 = "Units";
+				String Units = jsonReader.readKeyValueFromJsonObject(jsonObjectChild, sectionKey6);
+				
+				String sectionKey7 = "Narrative";
+				String Narrative = jsonReader.readKeyValueFromJsonObject(jsonObjectChild, sectionKey7);
+				
+				
+				test.log(LogStatus.PASS, "FAS Login Screen is displayed.");
+				
+				test.log(LogStatus.PASS, "FAS must get logged in and 'Open a Client' dialog must be displayed.");
+				  
+        			  test.log(LogStatus.PASS, "Client account is opened.");
+        			  BasePage.ClickWithUISPYAutomationName(Locators.STBrowser_Name);
+        			  
+        			  test.log(LogStatus.PASS, "'Stock Split' window must be displayed.");
+        			  
+        			  BasePage.sendChar(Name);
+ 
+        			 BasePage.ClickTabButton();
+        			 
+        			 BasePage.ClickTabButton();
+        	
+        			 BasePage.sendChar(Units);
+        			 
+        			 BasePage.ClickTabButton();
+        			 
+        			 BasePage.sendChar(SettlementDate);
+        			 
+        			 BasePage.ClickTabButton();
+        			 
+        			 BasePage.ClickTabButton();
+        			 
+        			 BasePage.ClickTabButton();
+        			
+        			 BasePage.sendChar(Narrative);
+        			
+        			 BasePage.ClickWithUISPYAutomationName(Locators.Ok_Name);
+        			 
+        			 BasePage.ClickWithUISPYAutomationName(Locators.Ok_Name);
+        			 
+        			 BasePage.ClickWithUISPYAutomationName(Locators.ATBrowser_Name);	
+       			
+       			 Thread.sleep(2000);
+       			 
+       			BasePage.ClickWithUISPYAutomationID(Locators.btnDetailDelete_Name);
+       			BasePage.ClickWithUISPYAutomationID(Locators.btnYes);
+       			test.log(LogStatus.PASS, "The newly added Stock Split record should be appeared in the  A/T browser>> Transaction grid.");
+       		 BasePage.ClickWithUISPYAutomationID(Locators.btnDetailClose_Id);	 
+       			
+        			  
+			}
+                     
+                }
+                catch (Exception e) {
+
+                               String screenShotName = new SimpleDateFormat("yyyyMMddhhmmss'.txt'").format(new Date());
+                               String screenShotPath = capture(screenShotName, "FAS");
+                               test.log(LogStatus.FAIL, "Please find Snapshot below: " + test.addScreenCapture(screenShotPath));
+                               test.log(LogStatus.FAIL, "FAS" + e.getMessage());
+                               throw new Exception(e);
+                           }
+
+                       }
+	
+
+
+	@Test(description = "FAS-Adding a Spin Off through toolbar.")
+
+	public void FASAddingASpinOffThroughToolbar() throws Exception {
+		
+		try {
+			Screen screen = new Screen();
+			String testCaseID1 = "FAS_07";
+			
+			testResult = Reporter.getCurrentTestResult();
+			String jiraNumber = testResult.getMethod().getDescription();
+			test = extentReports.startTest(jiraNumber);
+			
+			JSONArray listOfSearchData = jsonReader.readJSONDataFromFile(testCaseID1);
+
+			for (Object searchString : listOfSearchData) {
+
+				JSONObject jsonObjectChild = (JSONObject) searchString;
+				
+				String sectionKey1 = "Name";
+				String Name = jsonReader.readKeyValueFromJsonObject(jsonObjectChild, sectionKey1);
+				
+				String sectionKey5 = "DispositionDate";
+				String DispositionDate = jsonReader.readKeyValueFromJsonObject(jsonObjectChild, sectionKey5);
+				
+				String sectionKey6 = "Narrative";
+				String Narrative = jsonReader.readKeyValueFromJsonObject(jsonObjectChild, sectionKey6);
+				
+				String sectionKey7 = "MarketShare";
+				String MarketShare = jsonReader.readKeyValueFromJsonObject(jsonObjectChild, sectionKey7);
+				
+				
+				test.log(LogStatus.PASS, "FAS Login Screen is displayed.");
+				
+				test.log(LogStatus.PASS, "FAS must get logged in and 'Open a Client' dialog must be displayed.");
+				  
+        			  test.log(LogStatus.PASS, "Client account is opened.");
+        			  BasePage.ClickWithUISPYAutomationName(Locators.SPBrowser_Name);
+        			  
+        			  test.log(LogStatus.PASS, "'SpinOff/Exchange' window must be displayed.");
+        			  
+        			  BasePage.sendChar(Name);
+        			  
+        			  BasePage.ClickTabButton();
+        			  
+        			  BasePage.ClickWithUISPYAutomationID(Locators.Date_ID);
+ 
+        			 BasePage.sendChar(DispositionDate);
+        			 
+        			 BasePage.ClickTabButton();
+        			 
+        			 BasePage.sendChar(MarketShare);
+        			 
+        			 BasePage.ClickTabButton();
+        			 
+        			 BasePage.clickonEnterKey();
+        			 
+        			 BasePage.ClickWithUISPYAutomationID(Locators.Asset_ID);
+        			 
+        			 BasePage.sendChar(Name);
+        			 
+        			 BasePage.clickonEnterKey();
+        			 
+        			 BasePage.ClickWithUISPYAutomationName(Locators.Ok_Name);
+        			 
+        			 BasePage.ClickWithUISPYAutomationID(Locators.Narrative_ID);
+        			 
+        			 BasePage.sendChar(Narrative);
+        			 
+        			 BasePage.ClickWithUISPYAutomationName(Locators.Ok_Name);
+        			 
+        			 BasePage.ClickWithUISPYAutomationName(Locators.ATBrowser_Name);	
+       			
+       			 Thread.sleep(2000);
+       			 
+       			/*BasePage.ClickWithUISPYAutomationID(Locators.btnDetailDelete_Name);
+       			
+       			BasePage.ClickWithUISPYAutomationID(Locators.btnYes);
+       			
+       			BasePage.ClickWithUISPYAutomationID(Locators.btnDetailDelete_Name);
+       			
+       			BasePage.ClickWithUISPYAutomationID(Locators.btnYes);*/
+       			test.log(LogStatus.PASS, "The newly added SpinOff record should be appeared in the  A/T browser>> Transaction grid.");
+       		 BasePage.ClickWithUISPYAutomationID(Locators.btnDetailClose_Id);	 
+       			
+        			  
+			}
+                     
+                }
+                catch (Exception e) {
+
+                               String screenShotName = new SimpleDateFormat("yyyyMMddhhmmss'.txt'").format(new Date());
+                               String screenShotPath = capture(screenShotName, "FAS");
+                               test.log(LogStatus.FAIL, "Please find Snapshot below: " + test.addScreenCapture(screenShotPath));
+                               test.log(LogStatus.FAIL, "FAS" + e.getMessage());
+                               throw new Exception(e);
+                           }
+
+                       }
+	
+	
+	
+
 	
 	
 
