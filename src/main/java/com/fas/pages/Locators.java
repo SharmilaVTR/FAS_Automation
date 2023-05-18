@@ -109,6 +109,9 @@ public class Locators  extends BaseTest {
 	public static String  Date_ID="txtDate";
 	public static String  Asset_ID="cmbAsset";
 	public static String  Narrative_ID="txtNarrative";
+	
+	//Next Push
+	public static String  CancelButton_ID="btnCancel";
 }
 
 

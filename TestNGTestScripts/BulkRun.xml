@@ -9,18 +9,18 @@
 	
 	<test name="FAS bulk date 3rd Jan">
 		<classes>
-            <class name='fasSikuli.sikuliTest.FASDEMO'>
+            <class name='fasSikuli.sikuliTest.FAS'>
               <methods>
                 
                 
-                 <include name="FasIncomeTestcasess" />
-                  <include name="FASAddingAnAssetThroughToolbar" />
+                 <include name="FasIncomeTestcaseBDBrowser" />
+                  <include name="zasIncomeTestcaseCloseClientAndExitApplication" />
                   
     
       </methods>
 		 </class>
     </classes>	
-	</test>
+	</test>		
 	
 	 
 </suite>

@@ -1,38 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="12" total="13" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-17T10:22:34 GMT" name="Default suite" finished-at="2023-05-17T10:27:33 GMT" duration-ms="298829">
+  <suite started-at="2023-05-18T05:48:22 GMT" name="ZCLAC" finished-at="2023-05-18T05:54:22 GMT" duration-ms="359804">
     <groups>
     </groups>
-    <test started-at="2023-05-17T10:22:34 GMT" name="Default test" finished-at="2023-05-17T10:27:33 GMT" duration-ms="298829">
-      <class name="fasSikuli.sikuliTest.FAS">
-        <test-method is-config="true" signature="DelOldReport()[pri:0, instance:fasSikuli.sikuliTest.FAS@57cf54e1]" started-at="2023-05-17T10:22:34 GMT" name="DelOldReport" finished-at="2023-05-17T10:22:34 GMT" duration-ms="12" status="PASS">
+    <test started-at="2023-05-18T05:48:22 GMT" name="FAS bulk date 3rd Jan" finished-at="2023-05-18T05:54:22 GMT" duration-ms="359804">
+      <class name="fasSikuli.sikuliTest.FASDEMO">
+        <test-method is-config="true" signature="DelOldReport()[pri:0, instance:fasSikuli.sikuliTest.FASDEMO@209da20d]" started-at="2023-05-18T05:48:22 GMT" name="DelOldReport" finished-at="2023-05-18T05:48:22 GMT" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DelOldReport -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:fasSikuli.sikuliTest.FAS@57cf54e1]" started-at="2023-05-17T10:22:34 GMT" name="setUp" finished-at="2023-05-17T10:22:35 GMT" duration-ms="420" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:fasSikuli.sikuliTest.FASDEMO@209da20d]" started-at="2023-05-18T05:48:22 GMT" name="setUp" finished-at="2023-05-18T05:48:23 GMT" duration-ms="344" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:fasSikuli.sikuliTest.FAS@57cf54e1]" started-at="2023-05-17T10:22:35 GMT" name="setup" finished-at="2023-05-17T10:23:12 GMT" duration-ms="37557" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:fasSikuli.sikuliTest.FASDEMO@209da20d]" started-at="2023-05-18T05:48:23 GMT" name="setup" finished-at="2023-05-18T05:49:09 GMT" duration-ms="46305" status="PASS">
           <params>
             <param index="0">
-              <value is-null="true"/>
+              <value>
+                <![CDATA[local]]>
+              </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="FasIncomeTestcaseBDBrowser()[pri:0, instance:fasSikuli.sikuliTest.FAS@57cf54e1]" started-at="2023-05-17T10:23:12 GMT" name="FasIncomeTestcaseBDBrowser" description="FasIncomeTestcase B/D Browser" finished-at="2023-05-17T10:27:33 GMT" duration-ms="260561" status="PASS">
+        <test-method signature="FasIncomeTestcasess()[pri:0, instance:fasSikuli.sikuliTest.FASDEMO@209da20d]" started-at="2023-05-18T05:49:09 GMT" name="FasIncomeTestcasess" description="FasIncomeTestcase A/I Browser" finished-at="2023-05-18T05:51:29 GMT" duration-ms="139615" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- FasIncomeTestcaseBDBrowser -->
-        <test-method is-config="true" signature="extentSetUp()[pri:0, instance:fasSikuli.sikuliTest.FAS@57cf54e1]" started-at="2023-05-17T10:27:33 GMT" name="extentSetUp" finished-at="2023-05-17T10:27:33 GMT" duration-ms="251" status="PASS">
+        </test-method> <!-- FasIncomeTestcasess -->
+        <test-method is-config="true" signature="extentSetUp()[pri:0, instance:fasSikuli.sikuliTest.FASDEMO@209da20d]" started-at="2023-05-18T05:51:29 GMT" name="extentSetUp" finished-at="2023-05-18T05:51:29 GMT" duration-ms="279" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- extentSetUp -->
-      </class> <!-- fasSikuli.sikuliTest.FAS -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        <test-method signature="FASAddingAnAssetThroughToolbar()[pri:0, instance:fasSikuli.sikuliTest.FASDEMO@209da20d]" started-at="2023-05-18T05:51:29 GMT" name="FASAddingAnAssetThroughToolbar" description="FAS-Adding an Asset through toolbar." finished-at="2023-05-18T05:54:22 GMT" duration-ms="173169" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FASAddingAnAssetThroughToolbar -->
+        <test-method is-config="true" signature="extentSetUp()[pri:0, instance:fasSikuli.sikuliTest.FASDEMO@209da20d]" started-at="2023-05-18T05:54:22 GMT" name="extentSetUp" finished-at="2023-05-18T05:54:22 GMT" duration-ms="44" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extentSetUp -->
+      </class> <!-- fasSikuli.sikuliTest.FASDEMO -->
+    </test> <!-- FAS bulk date 3rd Jan -->
+  </suite> <!-- ZCLAC -->
 </testng-results>

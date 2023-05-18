@@ -9,7 +9,11 @@
           <include name="extentSetUp"/>
           <include name="setup"/>
           <include name="DelOldReport"/>
-          <include name="FASAddingaIncurredLiabilitythroughtoolbar"/>
+          <include name="FasIncomeTestcaseLTBrowser"/>
+          <include name="FasIncomeTestcaseBDBrowser"/>
+          <include name="zasIncomeTestcaseCloseClientAndExitApplication"/>
+          <include name="FasIncomeTestcaseATsaleTransaction"/>
+          <include name="ToValidateTheFunctionalityOfSaveContInAddAssetInATBrowser"/>
         </methods>
       </class> <!-- fasSikuli.sikuliTest.FAS -->
     </classes>

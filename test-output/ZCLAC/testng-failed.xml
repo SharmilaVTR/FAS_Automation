@@ -4,16 +4,17 @@
   <parameter name="Environment" value="local"/>
   <test thread-count="5" name="FAS bulk date 3rd Jan(failed)">
     <classes>
-      <class name="fasSikuli.sikuliTest.FASDEMO">
+      <class name="fasSikuli.sikuliTest.FAS">
         <methods>
-          <include name="FASAddingAnAssetThroughToolbar"/>
-          <include name="FasIncomeTestcasess"/>
           <include name="setUp"/>
-          <include name="setup"/>
-          <include name="DelOldReport"/>
           <include name="extentSetUp"/>
+          <include name="setup"/>
+          <include name="ResetCode"/>
+          <include name="DelOldReport"/>
+          <include name="FasIncomeTestcaseBDBrowser"/>
+          <include name="zasIncomeTestcaseCloseClientAndExitApplication"/>
         </methods>
-      </class> <!-- fasSikuli.sikuliTest.FASDEMO -->
+      </class> <!-- fasSikuli.sikuliTest.FAS -->
     </classes>
   </test> <!-- FAS bulk date 3rd Jan(failed) -->
 </suite> <!-- Failed suite [ZCLAC] -->

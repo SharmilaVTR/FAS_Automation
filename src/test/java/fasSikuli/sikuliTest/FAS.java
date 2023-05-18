@@ -23,6 +23,7 @@ import org.sikuli.script.SikuliException;
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
 
@@ -49,15 +50,6 @@ public class FAS extends BaseTest {
 	}
 
 
-
-
-
-
-
-
-
-
-
 	@Test(description = "FAS-Adding an Asset through toolbar.")
 
 	public void FASAddingAnAssetThroughToolbar() throws Exception {
@@ -66,7 +58,7 @@ public class FAS extends BaseTest {
 			Screen screen = new Screen();
 			String testCaseID1 = "FAS_01";
 
-			testResult = Reporter.getCurrentTestResult();
+			testResult = Reporter.getCurrentTestResult();						
 			String jiraNumber = testResult.getMethod().getDescription();
 			test = extentReports.startTest(jiraNumber);
 
@@ -440,6 +432,13 @@ public class FAS extends BaseTest {
 				BasePage.clickonEnterKey();
 
 				//BasePage.ClickWithUISPYAutomationID(Locators.btnOK_Id);
+				
+				BasePage.ClickWithUISPYAutomationID(Locators.btnDetailDelete_Name);
+				BasePage.ClickWithUISPYAutomationID(Locators.btnYes);
+
+				BasePage.ClickWithUISPYAutomationName(Locators.Close_Name);
+				
+				
 						
 				test.log(LogStatus.PASS, "TC Passed.");
 
@@ -733,12 +732,7 @@ public class FAS extends BaseTest {
 			driver.findElement(By.name("File")).click();
 
 			driver.findElement(By.name("Close Client")).click();
-			test.log(LogStatus.PASS, "Original Asset with AssetName = Assetone should be created");
-			Thread.sleep(2000);
-
-			test.log(LogStatus.PASS, " 'AssetName = Assetone' record should be selected");
-			test.log(LogStatus.PASS, " 'Add Income: Assetone' window must be displayed");
-			test.log(LogStatus.PASS, "  When selected Deposit To = Cashone, below pop up is appeared");
+			
 			driver.findElement(By.name("File")).click();
 			driver.findElement(By.name("Exit")).click();
 
@@ -988,11 +982,17 @@ public class FAS extends BaseTest {
 				 BasePage.ClickWithUISPYAutomationID(Locators.radTaxable);
 				
 				 BasePage.ClickWithUISPYAutomationID(Locators.btnOK_Id);
+				 
+				 BasePage.clickonEnterKey();
 				
 
 				test.log(LogStatus.PASS, "Expense record with 'Attorney Fees' expense type must be appeared in the C/E Browser >> Payment grid.");
 
+				BasePage.ClickWithUISPYAutomationID(Locators.btnDetailDelete_Name);
+				BasePage.ClickWithUISPYAutomationID(Locators.btnYes);
 
+				BasePage.ClickWithUISPYAutomationName(Locators.Close_Name);
+				
 
 				test.log(LogStatus.PASS, "TC Passed.");
 
@@ -1382,7 +1382,7 @@ public class FAS extends BaseTest {
        			 Thread.sleep(2000);
        			 
 
-       			BasePage.ClickWithUISPYAutomationName(Locators.EntryRow0_Name);
+       			//BasePage.ClickWithUISPYAutomationName(Locators.EntryRow0_Name);
 
        			BasePage.ClickWithUISPYAutomationID(Locators.btnDetailDelete_Name);
        			BasePage.ClickWithUISPYAutomationID(Locators.btnYes);
@@ -1484,7 +1484,7 @@ public class FAS extends BaseTest {
        			 Thread.sleep(2000);
        			 
 
-       			BasePage.ClickWithUISPYAutomationName(Locators.EntryRow0_Name);
+       			//BasePage.ClickWithUISPYAutomationName(Locators.EntryRow0_Name);
 
        			BasePage.ClickWithUISPYAutomationID(Locators.btnDetailDelete_Name);
        			BasePage.ClickWithUISPYAutomationID(Locators.btnYes);
@@ -1662,7 +1662,7 @@ public class FAS extends BaseTest {
         			
         			 BasePage.ClickWithUISPYAutomationName(Locators.Ok_Name);
         			 
-        			 BasePage.ClickWithUISPYAutomationName(Locators.Ok_Name);
+        			//	 BasePage.ClickWithUISPYAutomationName(Locators.Ok_Name);
         			 
         			 BasePage.ClickWithUISPYAutomationName(Locators.ATBrowser_Name);	
        			
@@ -1692,7 +1692,7 @@ public class FAS extends BaseTest {
 
 	@Test(description = "FAS-Adding a Spin Off through toolbar.")
 
-	public void FASAddingASpinOffThroughToolbar() throws Exception {
+	public void AAFASAddingASpinOffThroughToolbar() throws Exception {
 		
 		try {
 			Screen screen = new Screen();

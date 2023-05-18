@@ -111,7 +111,7 @@ public class BaseTest  {
 			 driver.findElement(By.name("Run as Demo")).click();
              Thread.sleep(2000);
 
- 			 BasePage.SendKeysById("txtPassword", "Satya@1234");
+ 			 BasePage.SendKeysById("txtPassword", "Password@123");
  			 Thread.sleep(2000);
  			 			
  			 

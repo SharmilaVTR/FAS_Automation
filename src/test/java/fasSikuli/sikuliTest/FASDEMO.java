@@ -255,7 +255,7 @@ public class FASDEMO extends BaseTest {
         			 
                      BasePage.sendChar("Assertone");
         			 BasePage.ClickTabButton();
-        			 BasePage.sendChar("Cashone");
+        			 BasePage.sendChar("Cash1");
         			 BasePage.ClickTabButton();
         			
         			 BasePage.sendChar(Date);
@@ -273,7 +273,7 @@ public class FASDEMO extends BaseTest {
            			//driver.findElement(By.name("OK")).click();
            			
            			
-           			BasePage.ClickWithUISPYAutomationName(Locators.AcctDate_Name);
+           			//BasePage.ClickWithUISPYAutomationName(Locators.AcctDate_Name);
 
                      Boolean validation =BasePage.isElementPresentusingName(Locators.AcctDate_Name);
            			

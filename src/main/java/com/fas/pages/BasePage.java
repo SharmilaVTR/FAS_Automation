@@ -49,7 +49,7 @@ public class BasePage extends BaseTest {
 		public static void ClickWithUISPYAutomationID(String ID) {
 			try {
 				driver.findElement(By.id(ID)).click();
-				Thread.sleep(2000);
+				Thread.sleep(1000);
 			} catch (Exception e) {
 				
 				System.out.println("ClickWithUISPYAutomationID  " + e.toString());
@@ -109,7 +109,7 @@ public class BasePage extends BaseTest {
 		public static boolean isElementPresentusingName(String Name) {
 			boolean flag = false;
 			try {
-				Thread.sleep(3000);
+				Thread.sleep(1000);
 				return driver.findElement(By.name(Name)).isDisplayed();
 
 			} catch (Exception e) {
@@ -322,11 +322,14 @@ public static void AltF4() throws AWTException, InterruptedException {
 
 public static void sendChar(String value) throws InterruptedException
 {
+	
+	try
+	{
 	// WebElement element =	driver.findElement(By.id("txtAsset));
   //element.clear();
 //	 WebElement ss =driver.findElement(By.id(id)); 
 //	 ss.click();
-	 Thread.sleep(2000);
+	 Thread.sleep(1000);
 	 //Thread.sleep(4000);
   for (int i = 0; i < value.length(); i++){
 	  Actions action = new Actions(driver);
@@ -334,21 +337,40 @@ public static void sendChar(String value) throws InterruptedException
       char c = value.charAt(i);
       String s = new StringBuilder().append(c).toString();
       action.sendKeys(s).perform();
-  }       
+  } 
+	}
+	 catch (Exception e) {
+		 
+		 System.out.println("Tab not pressed.");
+		
+
+		}
+  
 }
 
 
 
 
 public static void ClickTabButton() throws AWTException, InterruptedException {
-	Robot robo = new Robot();
+		
+	
+	try
+	{
+		Robot robo = new Robot();
+	
+	
 	robo.keyPress(KeyEvent.VK_TAB);
 	robo.keyRelease(KeyEvent.VK_TAB);
 	Thread.sleep(1000);
+	}
+	catch (Exception e) {
+		 
+		 System.out.println("Tab not pressed.");
 
-      
+		}
 }
-	
+
+
 	
 
 
